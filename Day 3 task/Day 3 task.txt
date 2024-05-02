@@ -119,12 +119,30 @@ console.log()
 
 
 7.Rotate an array by k times
+function rotateArray(arr, k) {
+    const n = arr.length;
+    // Calculate the actual number of rotations required
+    k = k % n;
+
+    // Rotate the array using array slicing
+    const rotatedArray = arr.slice(k).concat(arr.slice(0, k));
+    
+    return rotatedArray;
+}
+
+const arr = [1, 2, 3, 4, 5];
+const k = 2;
+console.log(rotateArray(arr, k));
 
 8.conver all the strings to title can in string array
-arr = ["fulu", "nulu", "hulu"];
-var arrToUp = String.prototype.toUpperCase.apply(arr).split(",");
+function arrayToUpperCase(arr) {
+    return arr.map(function(element) {
+        return element.toUpperCase();
+    });
+}
 
-console.log(arrToUp)
+var arr = ["fulu", "nulu", "hulu"];
+var arrToUp = arrayToUpperCase(arr);
 
 
 Do the below programs in arrow functions.
@@ -144,7 +162,12 @@ let odd_num = (a)=>{
 console.log(odd_num(a))
 
 2.Convert all the strings to title caps in a string array
+const arrayToUpperCase = arr => arr.map(element => element.toUpperCase());
 
+const arr = ["fulu", "nulu", "hulu"];
+const arrToUp = arrayToUpperCase(arr);
+
+console.log(arrToUp);
 
 3.Sum of all numbers in an array
 let value = 0;
