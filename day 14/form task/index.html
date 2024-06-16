@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Table</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <h1>Form and Table</h1>
+
+    <form id="userForm">
+        <label>
+            First Name:
+            <input type="text" id="firstName" required>
+        </label>
+        <label>
+            Last Name:
+            <input type="text" id="lastName" required>
+        </label>
+        <label>
+            Email:
+            <input type="email" id="email" required>
+        </label>
+        <label>
+            Address:
+            <textarea id="address" required></textarea>
+        </label>
+        <label>
+            Pincode:
+            <input type="text" id="pincode" required>
+        </label>
+        <label>
+            Gender:
+            <input type="radio" name="gender" value="Male" required> Male
+            <input type="radio" name="gender" value="Female" required> Female
+        </label>
+        <label>
+            Choice of Food (choose at least 2):
+            <input type="checkbox" name="food" value="briyani"> briyani
+            <input type="checkbox" name="food" value="meals"> meals
+            <input type="checkbox" name="food" value="waffle"> waffle 
+            <input type="checkbox" name="food" value="grill"> grill
+            <input type="checkbox" name="food" value="prawn"> prawn
+        </label>
+        <label>
+            State:
+            <input type="text" id="state" required>
+        </label>
+        <label>
+            Country:
+            <input type="text" id="country" required>
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>Gender</th>
+                <th>Food</th>
+                <th>State</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

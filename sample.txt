@@ -1,0 +1,19 @@
+HTTP - Hypertext Transfer protocol, so its used in client server communication.Using HTTP user can send the request to the server and the server sends the response to the user.
+
+HTTP 1.1:
+      when we make a request to the server for some exmaple website(www.example.com) page and server responds to source page before sending the request and there is a TCP response connection will establish will happen between client & server, again we need to make a request for image and serrrver will give response for image which means we need to give several requests &  responses are merged in a single connection. In HTTP 1.1 we have some drawbacks that lead to HTTP 2
+          
+      DrawBacks:
+           1.Transfer all the requests and responses in the plain text message.
+           2.Head of line blocking in which TCP connection is blocked all other request until response does not receive.
+           3.All the information related to the header file is repeated in every request
+
+
+
+HTTP 2:
+      It was developed over the SPDY protocol. HTTP 2 works on the binary framing layer instead of textual converts all the messages into binary format.This layer encapsulates messages- converted to its binary equivalent.HTTP 2developers introduced a binary frame layer this layer partitions requests and responses in tiny data packets and encodes them. Because of this multiple requests and responses able to run parallelly with HTTP 2 and chances of HOL blocking are bleak.
+
+
+HTTP 1.1 - It uses requests resource inlining for use getting multiple pages.It compress data by itself.
+
+HTTP 2 - It uses PUsh frame by server that collects all multiples pages. It uses HPACKk compression.
