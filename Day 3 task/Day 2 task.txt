@@ -1,0 +1,151 @@
+Do the below programs in anonymous function & IIFE
+
+1.Print odd numbers in an array using IIFE
+let a= [4,9,7,0,3,6]
+let odd = (
+      function(a)
+      {
+        for(let i =0; i<a.length;i++)
+        {
+            if(a[i] %2 != 0)
+            {
+                console.log("its odd ")
+                console.log(a[i])
+            }
+        }
+       } 
+    
+)(a)
+
+2.Sum of all numbers in an array
+let value = 0;
+let sum = [2,3,4,5]
+let odd = (
+  function(sum)
+  {
+    for (let i =0; i<sum.length; i++)
+    {
+         value += sum[i];
+    }
+    console.log("sum of value ",value)
+  }
+)(sum);
+
+3.Return all the prime numbers in an array
+let prime =[2, 6, 11, 15]
+let check_prime = (
+    function(prime)
+    {
+        for (let i in prime)
+        {
+            if(prime[i]== 0 || prime[i] == 1)
+            {
+                console.log("its not a prime", prime[i])
+            }
+            for(let j = 2; j<=prime[i]/2; j++)
+            {
+                if (prime[i] % j == 0) {
+                    console.log("It's prime",prime[i])
+            }
+            }
+        }
+    }
+)(prime);
+
+4.Return all the palindromes in an array
+
+
+
+
+
+
+
+
+
+5.Return median of two sorted arrays of the same size.
+const arr1 = [1, 3, 5];
+const arr2 = [2, 4, 6];
+const findMedianSortedArrays = (function() {
+    function findMedian(arr1, arr2) {
+        const merged = [...arr1, ...arr2].sort((a, b) => a - b);
+        const mid = Math.floor(merged.length / 2);
+        
+        if (merged.length % 2 === 0) {
+            return (merged[mid - 1] + merged[mid]) / 2;
+        } else {
+            return merged[mid];
+        }
+    }
+
+    return findMedian;
+})(arr1, arr2);
+
+
+console.log(findMedianSortedArrays(arr1, arr2));
+
+6.Remove duplicates from an array
+
+
+
+
+
+
+7.Rotate an array by k times
+
+
+
+
+Do the below programs in arrow functions.
+
+1.Print odd numbers in an array
+let a= [4,9,7,0,3,6]
+let odd_num = (a)=>{
+    for(let i =0; i<a.length;i++)
+        {
+            if(a[i] %2 != 0)
+            {
+                console.log("its odd ")
+                console.log(a[i])
+            }
+        }
+}
+console.log(odd_num(a))
+
+2.Convert all the strings to title caps in a string array
+
+
+3.Sum of all numbers in an array
+let value = 0;
+let sum = [2,3,4,5]
+let sum_all = (sum)=>
+{
+    for (let i =0; i<sum.length; i++)
+    {
+         value += sum[i];
+    }
+    console.log("sum of value ",value)
+}
+
+
+4.Return all the prime numbers in an array
+
+let prime =[2, 6, 11, 15]
+let prime_num =(prime)=>
+{
+    for (let i in prime)
+        {
+            if(prime[i]== 0 || prime[i] == 1)
+            {
+                console.log("its not a prime", prime[i])
+            }
+            for(let j = 2; j<=prime[i]/2; j++)
+            {
+                if (prime[i] % j == 0) {
+                    console.log("It's prime",prime[i])
+              }
+            }
+        }
+}
+console.log(prime_num(prime))
+
+5.Return all the palindromes in an array
