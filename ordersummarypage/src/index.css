@@ -1,0 +1,115 @@
+.container{
+  margin: 0px;
+  margin-left: -10px;
+  width: 200%;
+  
+}
+.custom-card {
+  border: 1px solid #dee2e6; /* Light gray border */
+  border-radius: 0.75rem; /* Rounded corners */
+  padding: 1rem; /* Padding inside the card */
+  background-color: #fff; /* White background */
+}
+.card-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-header p{
+  margin: 0;
+  font-size: 30px;
+  font-feature-settings: "blwm";
+  align-content: center;
+}
+
+.card-header .dropdown-toggle{
+  position: relative;
+  
+}
+
+.custom-card .dropdown-toggle:hover {
+  background-color: #014210; 
+  color: white; 
+}
+
+.product-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card img {
+  height: 200px; /* Adjust as needed */
+  object-fit:fill;
+}
+
+.card-body {
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  /* height: 50%; */
+}
+
+.quantity-input {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.buy-button {
+  margin-top: 10px;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+.order-summary {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.custom-card {
+  margin-left: 2px;
+}
+
+
+.colorder{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  flex: 0 0 25%; /* Adjust this value as needed */
+  padding: 10px;
+  height: fit-content;
+  align-items: center;
+}
+.order-details-header {
+  margin-bottom: 20px;
+  /* background-color: orange; */
+  
+  
+}
+
+.order-details-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.value {
+  font-weight: normal;
+}
+
+.checkout-button {
+  width: 100%;
+}
