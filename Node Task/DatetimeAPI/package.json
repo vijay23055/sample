@@ -1,0 +1,16 @@
+{
+  "name": "datetimeapi",
+  "version": "1.0.0",
+  "description": "\" Creating Current gtime stamp\"",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start":"node index.js",
+    "dev":"nodemon index.js"
+  },
+  "author": "Vijay",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
