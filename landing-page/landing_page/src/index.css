@@ -1,0 +1,197 @@
+
+/*hero section*/
+.hero-section {
+  background-image: url('./assets/hero1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin-right: 55%;
+}
+
+button {
+  margin-top: 20px;
+}
+.hero-button{
+  margin-right: 60%;
+  background-color: white;
+  color: rgb(79, 107, 243);
+}
+.hero-button:hover
+{
+  background-color: rgb(79, 107, 243);
+  color: white;
+}
+/*value section*/
+.value
+{
+  border: none;
+}
+.value-row
+{
+  background-color: #eff0f7;
+  padding: 1.25rem 1.875rem 3.125rem;
+  width: 25%;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  margin-right: 118px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+
+}
+.value-row:hover
+{
+  background-color: #1462dd;
+  color: white;
+}
+.row
+{
+  flex-wrap: nowrap;
+  margin-left: 102px;
+}
+.text-center {
+  text-align: center !important;
+  margin-bottom: 47px;
+}
+
+.overview-wrapper {
+  width: 100vw;  /* Full viewport width */
+  background-color:#eff0f7;  /* Light background color */
+  padding: 50px 0;
+ 
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.overview-section {
+  max-width: 1140px; /* Standard container size */
+  margin: 0 auto;
+}
+
+.overview-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.overview-section img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+
+.features-section {
+  padding: 60px 0;
+  margin-right: 150px;
+ 
+}
+
+.feature-card {
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px); /* Lift card on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-wrapper {
+  overflow: hidden; /* Ensure the image stays within the card boundaries */
+  height: 200px; /* Set fixed height for card images */
+}
+
+.card-img-hover {
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
+}
+
+.feature-card:hover .card-img-hover {
+  transform: scale(1.1); /* Slightly zoom in the image on hover */
+}
+
+.card-body {
+  background-color: white;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.text-center-feature
+{
+  text-align: center;
+  margin-left: 91px;
+}
+
+
+.cover-testimonial
+{
+  background-color:#eff0f7 ;
+  margin-top: -137px;
+}
+.text-center-testimonial {
+  margin-top: 65px;
+  margin-bottom: 65px;
+  text-align: center;
+}
+.testimonial-carousel {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonial-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-img:hover {
+  transform: scale(1.1);
+}
+
+.testimonial-review {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.testimonial-company {
+  font-weight: bold;
+  color: #555;
+}
+.contact-form form
+{
+  width: 43%;
+  margin-left: 27%;
+}
+
+.text-center-form
+{
+  text-align: center;
+  margin-top: 20px;
+}

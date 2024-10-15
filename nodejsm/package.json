@@ -1,0 +1,17 @@
+{
+  "name": "room-aminities",
+  "version": "1.0.0",
+  "description": "curd on rooms",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "tobi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  }
+}

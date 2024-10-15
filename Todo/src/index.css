@@ -1,0 +1,45 @@
+.first-section{
+  margin-left: 19%;
+  margin-top: 7%;
+}
+h3{
+  color: aquamarine;
+  text-align: center;
+  margin-top: 20px;
+}
+.card-body{
+  background-color: aquamarine;
+}
+.completed-item {
+  color: green;
+}
+
+.in-progress-item {
+  color: #71083c; 
+}
+
+.bg-success {
+  background-color: green !important;
+}
+
+.bg-danger {
+  background-color: #ff007f !important; 
+}
+
+.text-white {
+  color: white !important;
+}
+.butt-ons{
+  margin-left: 148px !important;
+}
+#dropdown-basic-button
+{
+  background-color: #ff007f !important;
+  border: none !important;
+  margin-left: 108px;
+}
+#form-label{
+  font-weight: bolder;
+  margin-top: -10px;
+  margin-left: -10px;
+}
