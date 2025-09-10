@@ -1,0 +1,271 @@
+body {
+  margin: 0;
+  min-width: 320px;
+  
+}
+
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+
+}
+
+.hero-section {
+  display: flex;
+  min-height: 100vh; 
+  max-width: 100%;
+  padding: 0;
+}
+
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f2f2f2;
+  padding: 100px 60px; 
+}
+
+
+.hero-eyebrow h2 {
+  font-size: 25px;
+  line-height: 2;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+
+}
+
+
+.hero-left h1 {
+  font-size: 56px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+
+.hero-left p {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #333;
+  margin: 0 0 24px 0;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translate(0);}
+}
+.is-loaded .hero-eyebrow h2 {
+  animation: fadeUp .45s ease .10s both;
+}
+.is-loaded .hero-left h1 {
+  animation: fadeUp .55s ease .25s both;
+}
+.is-loaded .hero-left p {
+  animation: fadeUp .55s ease .40s both;
+}
+
+.is-loaded .hero-cta-row {
+  animation: fadeUp .55s ease .55s both;
+}
+
+.hero-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.hero-cta-row .hero-btn,
+.hero-cta-row .hero-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 14px 22px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 1px solid #111;
+  background-color: #111;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+}
+
+.hero-cta-row .hero-button{
+  margin-left:auto;
+  border-radius: 20px;
+  bottom: 40px;
+  border: 2px solid black;
+  background-color:#f2f2f2;
+  color: #111;
+}
+.hero-cta-row .hero-button:hover {
+  background: #0b0b0b;
+  border: 2px solid #ffffff;
+  color: #fff;
+}
+
+.hero-cta-row .hero-btn:hover
+{
+  background: #e78484;
+  border: 1px solid #ffffff;
+}
+
+.hero-cta-row .hero-btn:focus-visible,
+.hero-cta-row .hero-button:focus-visible {
+  outline: 2px solid #4c9ffe;
+  outline-offset: 2px;
+}
+
+
+.hero-right {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@keyframes heroImageIn {
+  from { transform: scale(1.06); opacity: 0; }
+  to   { transform: scale(1);    opacity: 1; }
+}
+.is-loaded .hero-image {
+  animation: heroImageIn .9s ease both .2s;
+}
+
+.hero-social{
+  font-size: 20px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+  bottom: 10px;
+  cursor: pointer;
+  
+}
+
+.hero-social .icon{
+  display: inline-flex;
+  width: 50px;
+  height: 40px;
+  color: #ffffff;
+  border-radius: 50%;
+}
+
+@media (max-width: 900px) {
+  .hero-social {
+    top: auto;
+    right: 50%;
+    bottom: 16px;
+    transform: translateX(50%);
+    flex-direction: row;     /* horizontal on mobile */
+  }
+}
+
+
+
+@media (max-width: 900px) {
+  .hero-section {
+    flex-direction: column;
+  }
+  .hero-left, .hero-right {
+    flex: none;
+    width: 100%;
+    min-height: 50vh;
+  }
+  .hero-left {
+    padding: 60px 30px;
+  }
+  .hero-left h1 {
+    font-size: 40px;
+  }
+}
+  
+   
+/* .container{
+    max-width:100%;
+    margin: 0 auto;
+    padding:0;
+}
+.hero-section{
+    display: flex;
+    height: 100vh;
+    padding-top: 0;
+
+}
+
+.hero-left{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    background: #f2f2f2;
+    padding: 60px;
+    color: #111;
+}
+
+.hero-eyebrow h2{
+    font-size:14px;
+    line-height:2;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.hero-eyebrow p{
+    font-size: medium;
+    line-height: 1.6;
+    font-weight: 500;
+    color:#0c0c0c;
+    margin-bottom: 24px;
+}
+.hero-cta-row{
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    align-items: center;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+.hero-cta-row .hero-btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 18px;
+    font-size: 15px;
+    border: none;
+    background: #111;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+}
+.hero-cta-row .hero-btn.secondary {
+    background: transparent;
+    color: #111;
+    border: none;
+}
+
+.hero-cta-row .hero-btn:hover {
+    background: #222;
+}
+.hero-cta-row .hero-btn:focus-visible {
+    outline: 2px solid #4c9ffe;
+    outline-offset: 2px;
+}
+.hero-right{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    /* background: #f2f2f2; */
+    /* overflow: hidden; */

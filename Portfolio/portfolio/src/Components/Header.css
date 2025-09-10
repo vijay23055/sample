@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.Header-section {
+    background-color: rgba(0, 0, 0, 0.9); 
+    color: white;
+    padding: 10px 40px; 
+    position: fixed;
+    top: 20px; 
+    left: 60px; 
+    right: 60px; 
+    width: auto;
+    z-index: 1000;
+    
+}
+@keyframes Navabr {
+    from { transform: scale(1.06); opacity: 0; }
+    to   { transform: scale(1);    opacity: 1; }
+  }
+  
+.is-loaded .Header-section {
+    animation: Navabr .9s ease both .2s;
+}
+
+.row-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.head-logo a:hover{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.head-nav ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    padding-right: 70px;
+}
+
+.head-nav ul li{
+    display: inline;
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+.head-nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+    font-weight: 500;
+    transition: color 0.03s ease;
+}
